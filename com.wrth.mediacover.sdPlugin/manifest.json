@@ -1,0 +1,33 @@
+{
+  "Actions": [
+    {
+      "UUID": "com.tahir.mediacover.mediacover",
+      "Name": "Cover Art",
+      "Tooltip": "Shows current media cover art",
+      "Icon": "static/img/App-logo.png",
+      "PropertyInspectorPath": "propertyInspector/index.html",
+      "Controllers": ["Keypad"],
+      "States": [
+        {
+          "Image": "static/img/App-logo.png",
+          "FontSize": "11",
+          "FontStyle": "Bold",
+          "TitleAlignment": "bottom"
+        }
+      ]
+    }
+  ],
+  "CodePath": "MediaCover.exe",
+  "Name": "Media Cover Plugin",
+  "Description": "Displays the current media cover art",
+  "Version": "1.0.0",
+  "SDKVersion": 1,
+  "Icon": "static/img/App-logo.png",
+  "CategoryIcon": "static/img/App-logo.png",
+  "Category": "Media",
+  "Author": "WRTH",
+  "OS": [
+    { "Platform": "windows", "MinimumVersion": "7" }
+  ],
+  "Software": { "MinimumVersion": "2.10.179.426" }
+}

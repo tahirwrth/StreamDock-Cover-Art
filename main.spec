@@ -6,10 +6,11 @@ a = Analysis(
     pathex=[],
     binaries=[],
     datas=[
+	('static','static'),
         ('src/actions', 'src/actions'),
         ('src/core', 'src/core')
     ],
-    hiddenimports=['websocket-client','PIL', 'PIL.Image', 'PIL.ImageDraw','requests'],
+    hiddenimports=['websocket-client','PIL','PIL.Image','PIL.ImageDraw','requests','actions.mediacover','winrt.windows.media.control','winrt.windows.storage.streams','winrt.windows.foundation','winrt.windows.foundation.collections'],
     hookspath=[],
     hooksconfig={},
     runtime_hooks=[],

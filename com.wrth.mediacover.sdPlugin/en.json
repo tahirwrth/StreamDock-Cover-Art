@@ -1,0 +1,10 @@
+{
+    "Name": "Cover Art",
+    "Category": "Media",
+    "Description": "Display the thumbnail of the currently playing media.",
+    "com.wrth.mediacover": {
+        "Name": "Cover Art",
+        "Tooltip": "Cover Art"
+    },
+    "Localization": {}
+}
