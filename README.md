@@ -8,10 +8,20 @@ Windows Media Cover Art displayed in a button on a AJAZZ Stream Dock device
 - Fallback to default image if no media playing
 
 
-## Installation
+## Installation and Usage
 
-- Coming soon
+1. Download latest release or compile yourself
 
+2. Close Stream Dock AJAZZ software if open
+
+3. Copy `com.wrth.mediacover` to AJAZZ StreamDock plugin directory. i.e.,
+```
+%APPDATA%\HotSpot\StreamDock\plugins
+```
+
+3. Open Stream Dock AJAZZ software. If installation is successful, `Media` category will be present on the right-side menu under `Key`
+
+4. Drag `Cover Art` action from `Media` onto desired key
 
 ## Development Environment Setup and Build
 
@@ -35,13 +45,3 @@ pip install -r requirements.txt
 ```bash
 pyinstaller main.spec
 ```
-
-5. Move produced executable into com.wrth.mediacover and optionally rename executable to MediaCover.exe
-
-6. Copy com.wrth.mediacover to COMING SOON
-
-## Note
-
-If you encounter module not found errors, this is because `action_factory.py` uses `importlib.import_module` to dynamically load classes under `actions`, and `PyInstaller` statically analyzes code during packaging. PyInstaller will consider modules only used in `action` as unused and won't package them into the exe. We can directly add the relevant modules to `hiddenimports` manually to resolve this.
-
-<img src="./hiddenimports.png">
