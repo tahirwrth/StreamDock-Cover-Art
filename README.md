@@ -45,3 +45,6 @@ pip install -r requirements.txt
 ```bash
 pyinstaller main.spec
 ```
+## License
+
+This project is licensed under the MIT License.
